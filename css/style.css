@@ -1,0 +1,179 @@
+/*The is for the image code to be centered... */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #aaaaaa;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 150px;
+  padding: .5px 12px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+/*the following code is going to be from stepbrief style.css...should be for the column styling. */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.0em;
+}
+
+h3 {
+  text-align: center;
+
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border-top-style: solid;
+    border-width: .33em;
+    background-color: #f1f1f1;
+    margin: .5em 0;
+    text-align: center;
+    border-color: white;
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    margin: .5em 0;
+}
+
+nav a {
+    padding: .5em;
+    display: block;
+    min-width: 9em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.links {
+    display: none;
+    border-style: dotted;
+    border-color: #FFFFFF;
+    border-width: .15em 0;
+    text-decoration: none;
+}
+
+.tabs a {
+    min-width: 6em;
+    font-weight: normal;
+}
+
+.tabs li {
+    display: inline-block;
+}
+
+.cur-tab {
+    border-color: #FCCC0A
+}
+
+.cur-panel {
+    display: block;
+}
+
+.col1, .col2, .col3, .col4 {
+    margin-right: .5em;
+}
+
+.col1 li {
+    border-color: #0039A6;
+    text-decoration: none;
+}
+
+.col2 li {
+    border-color: #C60C30;
+}
+
+.col3 li {
+    border-color: #A626AA;
+}
+
+.col4 li {
+    border-color: #00AF3F;
+}
+
+footer {
+    margin-left: 1em;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+.wx {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.wx img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
